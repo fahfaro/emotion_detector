@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 19, 2019 at 06:50 AM
+-- Generation Time: Oct 19, 2019 at 06:54 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `emotion_detector`
 --
+CREATE DATABASE IF NOT EXISTS `emotion_detector` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `emotion_detector`;
 
 -- --------------------------------------------------------
 
