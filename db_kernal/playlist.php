@@ -21,7 +21,7 @@ function dbInsertUpdatePlaylist($playlist_id,$playlist_name, $mood_id, $item_id,
 	$conn = DBConnection();
 	if($playlist_id == 0)
 	{
-		$query = "INSERT INTO playlist VALUE(NULL,'$playlist_name', '$mood_id', '$item_id', '$added_by_id', '$added_date_time', '$is_enabled', '$remarks')";
+		$query = "INSERT INTO playlist VALUE(NULL,'$playlist_name', $mood_id, $item_id, $added_by_id, '$added_date_time', $is_enabled, '$remarks')";
 		mysqli_query($conn, $query);
 	}
 	else

@@ -14,7 +14,7 @@
 	function CheckExists($playlist_name)
 	{
 		$result = dbSelectAllPlaylists();
-		while($row = mysql_fetch_assoc($result))
+		while($row = mysqli_fetch_assoc($result))
 		{
 			if($row["playlist_name"] == $playlist_name)
 				return true;
