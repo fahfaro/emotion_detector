@@ -27,6 +27,8 @@ function dbInsertUpdatePlaylist($playlist_id,$playlist_name, $mood_id, $item_id,
 	else
 	{
 		$query = "UPDATE admin_user SET playlist_id = $playlist_id, playlist_name = $playlist_name, mood_id = $mood_id, item_id = $item_id,added_by_id = $added_by_id, added_date_time = $added_date_time, is_enabled = $is_enabled, remarks = $remarks WHERE playlist_id = $playlist_id";
+		echo $query;
+		return;
 		mysqli_query($conn, $query);
 	}
 }

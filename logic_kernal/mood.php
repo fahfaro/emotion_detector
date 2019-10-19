@@ -8,7 +8,7 @@
 	function CheckExists($mood_name)
 	{
 		$result = dbSelectAllMood();
-		while($row = mysql_fetch_assoc($result))
+		while($row = mysqli_fetch_assoc($result))
 		{
 			if($row["mood_name"] == $mood_name)
 				return true;
