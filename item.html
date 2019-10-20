@@ -2,7 +2,7 @@
 <head>
 </head>
 <body bgcolor = purple>
-	<form id = "frmPlaylist" method = "post" action = "playlist_code_behind.php">
+	<form id = "frmPlaylist" method = "post" action = "item_code_behind.php">
 		<table width = "100%">
 			<tr>
 				<td width = "30%"> </td>
@@ -10,9 +10,9 @@
 			<tr>
 				<table width = "100%">
 					<tr>
-						<td width = "10%"> Item Name </td>
+						<td width = "10%"> Item Title </td>
 						<td>
-							<input type = "text" id = "txtItemName" name = "txtItemName"/>
+							<input type = "text" id = "txtItemTitle" name = "txtItemTitle"/>
 						</td>
 					</tr>
 					<tr>
@@ -29,7 +29,7 @@
 					</tr>
 					<tr>
 						<td width = "10%"> 
-						<button type = "button" onclick = "submit"> Add Tracks </button>
+							<input type = "submit" value = "Add Tracks"/>
 						</td>
 					</tr>
 				</table>

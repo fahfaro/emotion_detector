@@ -5,6 +5,10 @@
 	{
 		return dbSelectAllMood();
 	}
+	function SelectMoodById($mood_id)
+	{
+		return dbSelectMoodByID();
+	}
 	function CheckExists($mood_name)
 	{
 		$result = dbSelectAllMood();

@@ -5,12 +5,17 @@
 	{
 		return dbSelectAllItem();
 	}
+	
+	function SelectItemById()
+	{
+		return dbSelectItemByID($item_id);
+	}
 	function CheckExists($item_id)
 	{
 		$result = dbSelectAllItem();
-		while($row = mysql_fetch_assoc($result))
+		while($row = mysqli_fetch_assoc($result))
 		{
-			if($row["item_id"] == $item_id)
+			if($row["item_title"] == $item_title)
 				return true;
 		}
 		return false;
