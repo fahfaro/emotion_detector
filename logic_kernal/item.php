@@ -10,7 +10,7 @@
 	{
 		return dbSelectItemByID($item_id);
 	}
-	function CheckExists($item_id)
+	function CheckExists($item_title)
 	{
 		$result = dbSelectAllItem();
 		while($row = mysqli_fetch_assoc($result))
