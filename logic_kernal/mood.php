@@ -14,7 +14,7 @@
 		$result = dbSelectAllMood();
 		while($row = mysqli_fetch_assoc($result))
 		{
-			if($row["mood_name"] == $mood_name)
+			if($row["moodname_associated_emotion"] == $mood_name)
 				return true;
 		}
 		return false;
